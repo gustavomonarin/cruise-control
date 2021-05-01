@@ -23,7 +23,7 @@ public class KafkaCruiseControlConfigUtils {
    * @param configs Configuration to used to config the returned instance.
    * @return A configured instance of the class c
    */
-  public static <T> T getConfiguredInstance(Class<?> c, Class<T> t, Map<String, Object> configs) {
+  public static <T> T getConfiguredInstance(Class<?> c, Class<T> t, Map<String, ?> configs) {
     Object instance;
     try {
       instance = c.newInstance();
